@@ -583,7 +583,7 @@ button:hover #clip {
   height: 20rem;
   background: lightgrey;
   background-color: #3460aa;
-  background-image: linear-gradient(15deg, #4158D0 14%, #3460aa 46%, #FFF 100%);
+  background-image: linear-gradient(15deg, #4158D0 2%, #3460aa 5%, #FFF 100%);
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   padding: 1rem;
