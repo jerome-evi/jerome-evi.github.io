@@ -67,7 +67,7 @@ header h1 {
 
 .head-img img {
   width: 350px;
-  border-radius: 50%;
+  border-radius: 70%;
   transition: all 0.3s ease 0s;
 }
 .head-img img:hover {
