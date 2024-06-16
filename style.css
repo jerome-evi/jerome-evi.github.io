@@ -162,8 +162,8 @@ section.section2 {
   gap: 20px;
 }
 .f-w-img img {
-  width: 250px;
-  height: 180px;
+  width: 350px;
+  height: 280px;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
 }
