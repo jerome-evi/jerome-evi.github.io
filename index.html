@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Balises méta SEO -->
+    <meta name="description" content="Portfolio de Jerome EVI, ingénieur en systèmes embarqués, spécialisé en NFC et RFID. Découvrez mes projets et mon parcours.">
+    <meta name="keywords" content="Jerome EVI, portfolio, ingénieur systèmes embarqués, NFC, RFID, projets, contact">
+    <meta name="author" content="Jerome EVI">
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -126,7 +131,7 @@
                     
                       <h1> </h1>
                       <p class="about">
-                        Passionné par les technologies embarquées, je suis alternant ingénieur à l'ESIEA en spécialisation systèmes embarqués, avec une bonne expérience en développement de firmware et en intégration de matériel. Grâce à des projets, j'ai développé des compétences avancées en C/C++, RTOS, microcontrôleurs (MCU), et je développe une forte affinité pour les technologies RFID et IoT.
+                        Ingénieur systèmes embarqués, je travaille sur l'ensemble du cycle de développement : du firmware bas-niveau (C/C++, RTOS, microcontrôleurs) jusqu'à l'interface utilisateur finale (UI/UX). Passionné par les technologies RFID et IoT, j'allie expertise technique et innovation pour développer des solutions complètes et optimisées.
                       </p>
                       
                       <a id="download-button" class="down">
@@ -163,10 +168,9 @@
                       </h1></a>
                       <p> Juillet 2023 | &#128640; </p>
                       <p class="post-article">
-                        Durant un parcours d'étude au Canada à l'UQAC, j'ai approfondi mes connaissances en technologies web avancées. J'ai étudié les architectures d'applications web, le protocole HTTP, et l'échange d'informations via HTML, XHTML, XML, JSON, CSS et XSL.
-                        
-                        J'ai acquis des compétences en programmation côté client (Applets, JavaScript, Ajax) et côté serveur (JDBC, ODBC, CGI avec Shell, C, PHP, PERL, Java Servlet, JSP, JavaBeans, JSF, ASP.Net). J'ai également travaillé avec des services web (SOAP, REST) et étudié les enjeux de sécurité informatique ainsi que les notions de web sémantique.
-                      </p>
+                        Lors de mon séjour d'études à l'UQAC au Canada, j'ai approfondi mes connaissances en technologies web avancées, notamment sur les architectures d'applications, le protocole HTTP, et l'échange de données via HTML, XML, JSON, et CSS. 
+                        J'ai développé des compétences en programmation client (JavaScript, Ajax) et serveur (PHP, Java, REST), tout en explorant les services web (SOAP, REST) et les enjeux de sécurité informatique, y compris les concepts de web sémantique.
+                    </p>
                   </div>
                   <div class="post-item">
                       <h1>
@@ -176,9 +180,8 @@
                       </h1>
                       <p>Avril 2024 | ANSSI | Cybersécurité</p>
                       <p class="post-article">
-                        La formation en Sécurité des Systèmes d'Information a été une expérience enrichissante et captivante. Chaque module m'a permis d'approfondir mes connaissances sur les divers aspects de la sécurité informatique, grâce à un contenu bien structuré et des ressources pédagogiques de qualité.
-
-                        J'ai pu assimiler des concepts complexes avec aisance et mettre en pratique mes nouvelles compétences grâce aux exercices pratiques et études de cas. Atteindre un score parfait de 100% dans chaque module a été une source de satisfaction et une validation de mes acquis.
+                        La formation en Sécurité des Systèmes d'Information a été enrichissante. Chaque module a approfondi mes connaissances en sécurité informatique, grâce à un contenu structuré et à des ressources de qualité. 
+                        J'ai assimilé des concepts complexes et mis en pratique mes compétences avec des exercices et des études de cas. Obtenir un score parfait de 100 % dans chaque module a validé mes acquis et m'a beaucoup satisfait.
                       </p>
                   </div>
               </div>
@@ -203,10 +206,10 @@
                           <p>NFC Forum | ISO 14443 | C | Traitement du signal | Proxmark</p>
                       </div>
                       <p class="f-w-article">
-                        Dans ce projet, j'ai développé une solution logicielle en langage C pour émuler une carte NFC conforme aux normes NFC Forum et ISO 14443. Cette émulation nécessite l'application de techniques avancées de traitement du signal afin de reproduire fidèlement le comportement d'une carte NFC réelle.
-
-                        L'objectif principal du projet est de fournir aux développeurs un outil fiable et sécurisé pour tester et valider leurs applications NFC. Grâce à cette solution, il est possible de créer un environnement contrôlé où les fonctionnalités et la sécurité des applications peuvent être rigoureusement évaluées avant leur déploiement.
-                      </p>
+                        Dans ce projet, je développe une solution logicielle pour émuler des cartes NFC selon les standards ISO 14443 A/B, en utilisant <strong><a href="https://proxmark.com" target="_blank" style="color: #1F3966; text-decoration: underline;">Proxmark</a></strong> pour reproduire fidèlement le comportement d'une carte NFC réelle. 
+                        Ce projet a conduit à une nouvelle version du firmware Proxmark. Les nouvelles fonctionnalités incluent un client Python pour contrôler l'appareil via USB, l'émulation de tags ISO 14443 B, et d'autres ajouts que j'explorerai pendant mon temps libre.
+                        L'objectif est de fournir aux développeurs un outil fiable, permettant l'automatisation des tests d'applications NFC dans un environnement contrôlé.
+                    </p>                              
                   </div>
               </div>
               <hr />
@@ -224,11 +227,12 @@
                           <p>Crytographie | GPU | CUDA</p>
                       </div>
                       <p class="f-w-article">
-                          Ce projet de cassage de chiffrement cryptographique met en œuvre la puissance de calcul des GPU grâce
-                          à la programmation parallèle avec CUDA. En répartissant la tâche de déchiffrement entre plusieurs
-                          threads, cette solution accélère significativement le processus de décryptage. La démonstration
-                          montra un gain de performance de 285x par rapport à une implémentation CPU.
-                      </p>
+                        Ce notebook exploite la puissance des GPU pour créer un super déchiffreur grâce à CUDA. Cette approche permet de répartir la tâche de déchiffrement entre plusieurs threads, optimisant ainsi l'utilisation des ressources des unités de traitement graphique.
+                        Les tests ont montré un gain de performance de 285x par rapport à une implémentation classique sur CPU. Cela met en lumière l'efficacité de l'architecture GPU pour des tâches computationnelles intensives et son potentiel à révolutionner la cryptographie et la sécurité informatique.
+                        Grâce à cette méthode, il devient possible d'analyser et de déchiffrer des données complexes à une vitesse sans précédent, ouvrant la voie à des applications avancées dans des domaines tels que la cybersécurité, le traitement de données massives etc.
+                    </p>
+                    
+                    
                   </div>
               </div>
               <div class="f-w">
@@ -241,20 +245,17 @@
                           <h1>
                               <a href="https://gitfront.io/r/JarodShelb/3gtpGc7Q9RNQ/robot/">
                               <a href="https://gitfront.io/r/JarodShelb/3gtpGc7Q9RNQ/robot/">
-                                  Robot autonome
+                                  Robot suiveur
                           </h1></a>
                           <div class="f-w-text-p">
                               <p><span>2023</span></p>
                               <p> Capteurs | Intelligence Artificielle </p>
                           </div>
                           <p class="f-w-article">
-                              Ce projet met en œuvre un robot capable de détecter et de suivre des balles colorées dans un
-                              environnement dynamique en utilisant la caméra HUSKYLENS. Le robot est équipé d'une caméra
-                              pour la perception visuelle et de moteurs pour le mouvement. Il peut détecter les balles
-                              colorées, ajuster sa direction pour les suivre et les éliminer séquentiellement dans
-                              un ordre prédéfini. L'objectif est d'intégrer la perception visuelle et le contrôle de
-                              mouvement pour permettre au robot d'interagir de manière autonome avec son environnement.
-                          </p>
+                            Un robot <strong><a href="https://esieabot.esiea.fr" target="_blank" style="color: #1F3966; text-decoration: underline;">[ESIEA BOT]</a></strong> capable de détecter et de suivre des objets dans un environnement dynamique. 
+                            Équipé d'une caméra pour la perception visuelle et de moteurs pour le mouvement, le robot suiveur peut identifier des balles colorées ou un tag ciblé, ajustant sa direction pour les suivre selon un ordre défini. 
+                            L'objectif est d'intégrer la perception visuelle et le contrôle du mouvement, permettant ainsi au robot d'interagir de manière autonome avec son environnement.
+                        </p>                        
                       </div>
                   </div>
                   <hr />
@@ -273,15 +274,13 @@
                               <p>Node Red | Web </p>
                           </div>
                           <p class="f-w-article">
-                              Ce projet m'a permis de concevoir un tableau de bord innovant pour suivre
-                              et analyser les activités de production d'une entreprise. j'ai développé
-                              une interface conviviale permettant aux utilisateurs de surveiller en temps réel les
-                              performances, d'identifier les inefficacités et de prendre des décisions éclairées pour
-                              optimiser les processus. Notons également l'intégration des mesures de sécurité telles 
-                              que le protocole HTTPS et l'authentification OAuth pour garantir la confidentialité des données.
-                              Ce projet représente une expérience enrichissante où j'ai pu mettre en pratique
-                              mes compétences techniques pour contribuer à l'amélioration des opérations de production.
-                          </p>
+                            Ce projet consiste en un tableau de bord conçu pour suivre et analyser les activités de production. 
+                            Il offre une interface conviviale permettant aux utilisateurs de surveiller en temps réel les performances, d'identifier les inefficacités et de prendre des décisions éclairées pour optimiser les processus. 
+                            L'intégration de mesures de sécurité, telles que le protocole HTTPS et l'authentification OAuth, garantit la confidentialité des données. 
+                            <p><span><strong>Technologies utilisées :</strong> MySQL, MQTT, Node-RED.</span></p>
+                            
+                            
+                        </p>
                       </div>
                   </div>
                   <hr />
@@ -349,6 +348,7 @@
               }
           });
       </script>
+      
 
   </body>
 </html>
