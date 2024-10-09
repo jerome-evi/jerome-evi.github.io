@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .container {
-      width: 64%;
+      width: 70%;
       margin: auto;
       text-justify:auto;
     }
@@ -15,7 +15,12 @@ body {
     font-family: Calibri;
     color : #000000;
     font-size : 20px;
+    margin: 0, auto;          /* Supprime les marges par défaut */
+    padding: 10px;      /* Ajuste l'espace intérieur */
+    max-width: auto;  /* Ajuste selon la largeur désirée */
 }
+
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -152,7 +157,9 @@ header h1 {
   width: 60%;
 }
 .head-img {
+  width: 30%;
   display: flex;
+  justify-content: left;
   align-items: center;
   order: 1;
 }
