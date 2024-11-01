@@ -458,7 +458,7 @@ footer p {
 
 /* Path: shine.css */
 .shine {
-    font-size: 2em;
+    font-size: 100px
     font-weight: 100;
     color: rgba(20, 172, 243, 0.3);
     background: #222 -webkit-gradient( linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff) ) 0 0 no-repeat;
