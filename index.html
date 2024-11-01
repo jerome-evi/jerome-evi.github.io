@@ -131,7 +131,7 @@
                     
                       <h1> </h1>
                       <p class="about">
-                        Passionné par les technologies RFID, IoT et l'IA embarquée, je contribue à toutes les étapes du développement, du firmware bas niveau (C/C++, RTOS, microcontrôleurs) jusqu’à l’interface utilisateur (UI/UX). Je m’applique à concevoir des solutions optimisées, en réponse aux besoins spécifiques de chaque projet.                      </p>
+                        Passionné par les technologies RFID, IoT et l'IA embarquée, <button class="read-more-btn" onclick="toggleText()">Lire la suite</button> je contribue à toutes les étapes du développement, du firmware bas niveau (C/C++, RTOS, microcontrôleurs) jusqu’à l’interface utilisateur (UI/UX). Je m’applique à concevoir des solutions optimisées, en réponse aux besoins spécifiques de chaque projet.                      </p>
                       <a id="download-button" class="down">
                           <button>Télécharger mon CV</button>
                       </a>
@@ -312,8 +312,7 @@
                             Ce projet consiste en un tableau de bord conçu pour suivre et analyser les activités de production. 
                             Il offre une interface conviviale permettant aux utilisateurs de surveiller en temps réel les performances, d'identifier les inefficacités et de prendre des décisions éclairées pour optimiser les processus. 
                             L'intégration de mesures de sécurité, telles que le protocole HTTPS et l'authentification OAuth, garantit la confidentialité des données. 
-                            <p><span><strong>Technologies utilisées :</strong> MySQL, MQTT, Node-RED.</span></p>
-                            
+                           <p><span><strong>Technologies utilisées :</strong> MySQL, MQTT, Node-RED.</span></p>
                         </p>
                       </div>
                   </div>
@@ -345,8 +344,6 @@
               </div>
           </div>
       </section>
-
-
       <footer>
           <div class="social-buttons" id="contact">
               <a href="https://github.com/jshelb200/">
@@ -365,6 +362,18 @@
           <p>Copyright © 2024 All rights reserved <br><br> <b> ©Jerome EVI </b></p>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        function toggleText() {
+            const content = document.getElementById("text-content");
+            if (content.style.maxHeight === "50px") {
+                content.style.maxHeight = content.scrollHeight + "px";
+                document.querySelector(".read-more-btn").textContent = "Réduire";
+            } else {
+                content.style.maxHeight = "50px";
+                document.querySelector(".read-more-btn").textContent = "Lire la suite";
+            }
+        }
+      </script>
       <script>
           $(function () {
               $(".toggle").on("click", function () {
@@ -390,7 +399,5 @@
               }
           });
       </script>
-      
-
   </body>
 </html>
