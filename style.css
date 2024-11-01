@@ -399,6 +399,9 @@ footer p {
   .f-w-img img {
     width: 100%;
   }
+  .f-w-imglong img {
+    width: 100%;
+  }
 }
 
 
