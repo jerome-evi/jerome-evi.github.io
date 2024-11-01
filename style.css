@@ -374,6 +374,8 @@ footer p {
   }
   .section2 {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .section-p .r-p {
     margin: auto;
