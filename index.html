@@ -212,11 +212,14 @@
                         </div>
                         <p class="f-w-article-new" id="text-content">
                             La formation en Sécurité des Systèmes d'Information a été enrichissante.
-                            <span class="read-more" onclick="toggleText()">Lire la suite</span>
-                            <span class="full-text">
-                                Chaque module a approfondi mes connaissances en sécurité informatique, grâce à un contenu structuré et à des ressources de qualité. J'ai assimilé
-                                des concepts et mis en pratique mes compétences avec des exercices et des études de cas. Obtenir un score parfait de 100 % dans chaque module a validé mes acquis et m'a beaucoup satisfait.
-                            </span>
+                            <p class="f-w-article-new" id="text-content">
+                                La formation en Sécurité des Systèmes d'Information a été enrichissante.
+                                <span class="full-text">
+                                    Chaque module a approfondi mes connaissances en sécurité informatique, grâce à un contenu structuré et à des ressources de qualité. J'ai assimilé
+                                    des concepts et mis en pratique mes compétences avec des exercices et des études de cas. Obtenir un score parfait de 100 % dans chaque module a validé mes acquis et m'a beaucoup satisfait.
+                                </span>
+                            </p>
+                            <button class="read-more-btn" onclick="toggleText()">Lire la suite</button>
                         </p>
                         
                   </div>                      
@@ -367,9 +370,16 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
         function toggleText() {
-          const content = document.getElementById("text-content");
-          content.classList.toggle("expanded");
+            const content = document.getElementById("text-content");
+            const button = document.querySelector(".read-more-btn");
+            content.classList.toggle("expanded");
+            if (content.classList.contains("expanded")) {
+                button.textContent = "Réduire";
+            } else {
+                button.textContent = "Lire la suite";
+            }
         }
+
       </script>
       <script>
           $(function () {
