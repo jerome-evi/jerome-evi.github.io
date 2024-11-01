@@ -229,13 +229,13 @@ section.section2 {
 }
 
 .f-w-imglong img {
-  width: 500px;
-  height: 320px;
+  width: 480px;
+  height: 300px;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
 }
 .f-w-imglong img:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .f-w-text-p {
