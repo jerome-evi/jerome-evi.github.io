@@ -228,6 +228,16 @@ section.section2 {
   transform: scale(1.1);
 }
 
+.f-w-imglong img {
+  width: 500px;
+  height: 320px;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+.f-w-imglong img:hover {
+  transform: scale(1.1);
+}
+
 .f-w-text-p {
   display: flex;
   gap: 50px;
