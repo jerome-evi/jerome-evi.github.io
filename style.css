@@ -264,12 +264,6 @@ section.section2 {
   animation: zoomIn 0.8s ease-in forwards;
 }
 
-.f-w-article-new {
-  overflow: hidden;
-  max-height: 50px; /* Hauteur restreinte initialement */
-  transition: max-height 0.5s ease;
-}
-
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -280,6 +274,37 @@ section.section2 {
         transform: scale(1);
     }
 }
+
+.f-w-article-new {
+  overflow: hidden;
+  white-space: nowrap; /* Tronque le texte en une seule ligne */
+  text-overflow: ellipsis; /* Ajoute des points de suspension */
+  max-height: 1.2em; /* Hauteur pour une ligne de texte */
+}
+
+.read-more {
+  color: #1F3966; /* Couleur de lien */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.full-text {
+  display: none; /* Masque le texte complet au départ */
+}
+
+.f-w-article-new.expanded {
+  white-space: normal; /* Permet de passer à plusieurs lignes */
+  max-height: none; /* Supprime la restriction de hauteur */
+}
+
+.f-w-article-new.expanded .read-more {
+  display: none; /* Cache "Lire la suite" après le clic */
+}
+
+.f-w-article-new.expanded .full-text {
+  display: inline; /* Affiche le texte complet */
+}
+
 footer {
   width: auto;
   padding-top: 50px;
