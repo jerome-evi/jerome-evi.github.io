@@ -286,6 +286,7 @@ section.section2 {
   color: #1F3966; /* Couleur de lien */
   cursor: pointer;
   font-weight: bold;
+  font-size: 10px;
 }
 
 .full-text {
