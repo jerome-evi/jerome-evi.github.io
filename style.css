@@ -259,9 +259,12 @@ section.section2 {
   margin-bottom: 10px;
 }
 .f-w-article {
-    opacity: 0;
-    transform: scale(0.9);
-    animation: zoomIn 0.8s ease-in forwards;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease-in forwards;
+  overflow: hidden;
+  max-height: 50px; /* Hauteur initiale restreinte */
+  transition: max-height 0.5s ease;
 }
 
 @keyframes zoomIn {
