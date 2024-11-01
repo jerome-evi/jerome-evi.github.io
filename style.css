@@ -267,6 +267,12 @@ section.section2 {
   transition: max-height 0.5s ease;
 }
 
+.f-w-article-new {
+  overflow: hidden;
+  max-height: 50px; /* Hauteur restreinte initialement */
+  transition: max-height 0.5s ease;
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
