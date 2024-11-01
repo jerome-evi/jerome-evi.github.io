@@ -670,7 +670,7 @@ button:hover #clip {
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
-  width: 3em;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
