@@ -983,3 +983,69 @@ button:hover #clip {
       transform: translateY(0);
   }
 }
+
+/* Modifications pour les appareils mobiles */
+@media screen and (max-width: 800px) {
+  nav {
+    display: block;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    display: block;
+    text-align: center;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+  .toggle {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .head-img img {
+    width: 150px; /* Réduit la taille de l'image */
+  }
+  .img-article h1, .img-article p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .down button {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .section2, .section3, .section4 {
+    padding: 10px;
+  }
+  .recent-posts, .f-w-item {
+    flex-direction: column;
+  }
+  .carte {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .f-w-img img {
+    width: 100%;
+    height: auto;
+  }
+  .f-w-text {
+    font-size: 16px;
+    text-align: left;
+  }
+  .contact .form {
+    width: 100%;
+    padding: 15px;
+  }
+  footer {
+    padding: 20px 10px;
+  }
+  .social-buttons img {
+    width: 40px;
+  }
+}
