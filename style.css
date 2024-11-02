@@ -414,6 +414,11 @@ footer p {
   .section-p .r-p {
     margin: auto;
   }
+  .section4 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .v-p {
     display: none;
   }
@@ -751,6 +756,23 @@ button:hover #clip {
   background-color: royalblue;
   color: #fff;
   cursor: pointer;
+}
+
+.submit {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1F3966;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #3460aa;
 }
     
 
