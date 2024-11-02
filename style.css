@@ -705,13 +705,10 @@ button:hover #clip {
 /*Contact*/
 
 .form {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  padding: 20px;
+  width: 80%; /* Définit la largeur du formulaire en pourcentage */
+  max-width: 800px; /* Limite la largeur à 800px sur grands écrans */
+  margin: 0 auto; /* Centre le formulaire */
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
 }
