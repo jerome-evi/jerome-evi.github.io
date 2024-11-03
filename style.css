@@ -926,18 +926,6 @@ button:hover #clip {
  }
 
 
-/* Adaptation pour les petits écrans */
-@media screen and (max-width: 768px) {
-  .carte {
-    flex: 0 0 100%; /* Les cartes prennent plus de place sur mobile */
-  }
-
-  .slider-arrow {
-    padding: 10px;
-    font-size: 16px;
-  }
-}
-
  /*merci*/
 
  @keyframes blinkCursor {
@@ -1095,6 +1083,7 @@ button:hover #clip {
   .carte {
     width: 100%;
     margin-bottom: 20px;
+    flex: 0 0 100%; /* Les cartes prennent plus de place sur mobile */
   }
   .f-w-img img {
     width: 100%;
@@ -1114,4 +1103,53 @@ button:hover #clip {
   .social-buttons img {
     width: 40px;
   }
+  .slider-container {
+    width: 50vw; /* Prend toute la largeur de la fenêtre */
+    overflow: hidden; /* Cache les cartes hors de vue */
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  
+  .slider-content {
+    display: flex; /* Utilise flex pour aligner les cartes en ligne */
+    transition: transform 0.6s ease-in-out;
+    width: calc(50vw * 4); /* 4 = Nombre de cartes */
+  }
+  
+  .slider-content .carte {
+    width: 50vw; /* Chaque carte prend la largeur de la vue */
+    height: max-content;
+    flex-shrink: 0; /* Évite que les cartes se rétrécissent */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  /* Styles des flèches de navigation */
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  
+  .slider-arrow.left {
+    left: 10px;
+  }
+  
+  .slider-arrow.right {
+    right: 10px;
+  }
+  
+  .slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
 }

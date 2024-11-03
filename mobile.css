@@ -1,0 +1,90 @@
+/* Règles globales pour l'adaptation mobile */
+@media (max-width: 768px) {
+    .container {
+      width: 95%; /* Réduit la largeur pour mieux s'adapter aux petits écrans */
+    }
+  
+    body {
+      font-size: 16px; /* Réduit la taille de la police sur les petits écrans */
+    }
+  
+    nav {
+      flex-direction: column; /* Aligne les éléments de navigation en colonne sur mobile */
+      padding: 0;
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Affiche les liens de navigation en colonne */
+      align-items: center;
+    }
+  
+    .nav-links li a {
+      font-size: 18px; /* Réduit la taille de la police des liens de navigation */
+    }
+  
+    .toggle {
+      display: block; /* Affiche le bouton toggle pour le menu mobile */
+    }
+  
+    /* Section principale */
+    .section1, .section2, .section3 {
+      flex-direction: column; /* Affiche les sections en colonne sur mobile */
+      align-items: center;
+    }
+  
+    .head-img, .img-article {
+      width: 100%; /* Les images prennent toute la largeur de l'écran */
+    }
+  
+    /* Cartes */
+    .recent-posts, .f-w {
+      flex-direction: column; /* Affiche les cartes en colonne sur mobile */
+      gap: 10px; /* Espace réduit entre les cartes */
+    }
+  
+    .carte {
+      width: 90%; /* Les cartes occupent presque toute la largeur */
+      height: auto; /* Ajuste la hauteur automatiquement */
+      padding: 1rem; /* Réduit le padding */
+    }
+  
+    .carte-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem;
+    }
+  
+    /* Slider */
+    .slider-container {
+      width: 100%; /* Prend toute la largeur de l'écran */
+    }
+  
+    .slider-content .carte {
+      width: 100%; /* Les cartes du slider prennent toute la largeur */
+    }
+  
+    .slider-arrow {
+      display: none; /* Cache les flèches sur mobile pour simplifier */
+    }
+  
+    /* Texte */
+    .section-p {
+      font-size: 24px; /* Réduit la taille des titres */
+      text-align: center;
+    }
+  
+    .about, .f-w-text-p, .f-w-text {
+      font-size: 14px; /* Réduit la taille du texte pour mobile */
+    }
+  
+    /* Footer */
+    footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .social-buttons img {
+      width: 50px; /* Réduit la taille des icônes sociales */
+    }
+  }
+  
