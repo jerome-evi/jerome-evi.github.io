@@ -3,38 +3,111 @@
     .container {
       width: 95%; /* Réduit la largeur pour mieux s'adapter aux petits écrans */
     }
-  
-    body {
-      font-size: 16px; /* Réduit la taille de la police sur les petits écrans */
+
+    * {
+        margin: -1px;
+        text-justify: auto;
+        box-sizing: border-box;
     }
-  
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        width: 10%;
+        height: 10%;
+    }
+      
+
+    body {
+        font-family: Calibri;
+        color: #000000;
+        font-size: 10px;
+        margin-right: 34px;
+    }
+    
     nav {
       flex-direction: row; /* Aligne les éléments de navigation en colonne sur mobile */
       padding: 0;
     }
-  
-    .nav-links {
-      flex-direction: column; /* Affiche les liens de navigation en colonne */
-      align-items: center;
+
+    .toggle {
+        display: flex; /* Affiche le bouton toggle pour le menu mobile */
+        justify-items: end;
     }
+
+    #clip {
+        --color: #3460aa;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border: 5px double var(--color);
+        box-shadow: inset 0px 0px 15px #195480;
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      }
   
     .nav-links li a {
       font-size: 18px; /* Réduit la taille de la police des liens de navigation */
     }
   
     .toggle {
-      display: block; /* Affiche le bouton toggle pour le menu mobile */
+      display: flex; /* Affiche le bouton toggle pour le menu mobile */
     }
+
+    .head-img img {
+        width: 80px;
+        border-radius: 70%;
+        transition: all 0.3s ease 0s;
+        justify-items: left;
+
+    }
+
+    .head-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+
+    }
+
+    .img-article {
+        width: 50%; /* Les images prennent toute la largeur de l'écran */
+    }
+
+      .svg-frame svg {
+        width: 60px;
+        height: 60px;
+     }
+
+     .down button {
+        margin-top: 30px;
+        background-color: #1F3966;
+        border: none;
+        padding: 0;
+        border-radius: 2px;
+        font-size: 10px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        color: white;
+      }
+
+      .down {
+        display: flex;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
   
     /* Section principale */
     .section1, .section2, .section3 {
       flex-direction: column; /* Affiche les sections en colonne sur mobile */
       align-items: center;
     }
-  
-    .head-img, .img-article {
-      width: 100%; /* Les images prennent toute la largeur de l'écran */
-    }
+
   
     /* Cartes */
     .recent-posts, .f-w {
@@ -47,6 +120,37 @@
       height: auto; /* Ajuste la hauteur automatiquement */
       padding: 1rem; /* Réduit le padding */
     }
+
+    .section3 {
+      width: 100%; /* Prend toute la largeur de l'écran */
+    }
+
+
+    button {
+        width: 7em;
+        height: 3em;
+        font-size: 6px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction:row;
+        justify-items: center;
+    }
+
+
+
+
+    /* Slider */
+
+    .slider-container {
+      width: 50%; /* Prend toute la largeur de l'écran */
+    }
+
+    .slider-content .carte {
+      width: 50%; /* Les cartes du slider prennent toute la largeur */
+    }
+
   
     .carte-button {
       width: auto;
@@ -69,12 +173,21 @@
   
     /* Texte */
     .section-p {
-      font-size: 24px; /* Réduit la taille des titres */
+      font-size: 15px; /* Réduit la taille des titres */
       text-align: center;
     }
+
+    .about {
+        font-size: 8px;
+        font-style: italic;
+        color: #333;
+        margin-top: 20px;
+        line-height: 1.6;
+        text-align: left;
+    }
   
-    .about, .f-w-text-p, .f-w-text {
-      font-size: 14px; /* Réduit la taille du texte pour mobile */
+    .f-w-text-p, .f-w-text {
+      font-size: 12px; /* Réduit la taille du texte pour mobile */
     }
   
     /* Footer */

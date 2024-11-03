@@ -9,15 +9,29 @@
       margin: auto;
       text-justify:auto;
     }
+
+* {
+      text-justify: auto;
+      box-sizing: border-box;
+  }
+
+
+
 body {
     background-color: #fcfcfc;
     background-image: linear-gradient(50deg, #4158D0 2%, #3460aa 4%, #FFF 100%);
     font-family: Calibri;
     color : #000000;
     font-size: 18px;
-    margin: 0, auto;          /* Supprime les marges par défaut */
+    margin: 0;          /* Supprime les marges par défaut */
     padding: 10px;      /* Ajuste l'espace intérieur */
     max-width: auto;  /* Ajuste selon la largeur désirée */
+    margin-right: 34px;
+    margin: -5px;
+}
+
+.hydrated {
+  visibility: inherit;
 }
 
 
@@ -71,7 +85,7 @@ header h1 {
 }
 
 .head-img img {
-  width: 350px;
+  width: 290px;
   border-radius: 70%;
   transition: all 0.3s ease 0s;
 }
@@ -387,96 +401,6 @@ footer p {
   }
 }
 
-@media screen and (max-width: 800px) {
-  nav {
-    display: block;
-    position: relative;
-    padding: 15px 20px;
-  }
-  .nav-links {
-    margin-top: 15px;
-    display: none;
-  }
-  .nav-links.active,
-  .toggle {
-    display: block;
-  }
-  .toggle {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-  }
-  .section1 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .head-img {
-    display: flex;
-    flex-direction: column;
-  }
-  .img-article {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .img-article h1 {
-    margin-top: 40px;
-    text-align: center;
-  }
-  .img-article p {
-    text-align: center;
-  }
-  .down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .section2 {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .section3 {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-
-  .section4 {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .v-p {
-    display: none;
-  }
-  .recent-posts {
-    display: flex;
-    flex-direction: column;
-  }
-  .post-item {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-  .container {
-    width: 90%;
-    display: flex;
-  }
-  .f-w-item {
-    display: flex;
-    flex-direction: column;
-  }
-  .f-w-img img {
-    width: 100%;
-  }
-  .f-w-imglong img {
-    width: 100%;
-  }
-}
-
-
 
 /* Path: loader.css */
 .svg-frame {
@@ -493,11 +417,11 @@ footer p {
         position: absolute;
         transition: .5s;
         z-index: calc(1 - (0.2 * var(--j)));
-        transform-origin: center;
+        transform-origin: left;
         width: 344px;
         height: 344px;
         fill: none;
-    }
+  }
 
     .svg-frame:hover svg {
         transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
@@ -1036,120 +960,4 @@ button:hover #clip {
       opacity: 1;
       transform: translateY(0);
   }
-}
-
-/* Modifications pour les appareils mobiles */
-@media screen and (max-width: 800px) {
-  nav {
-    display: block;
-    padding: 10px;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    display: block;
-    text-align: center;
-  }
-  .nav-links a {
-    font-size: 18px;
-  }
-  .toggle {
-    display: block;
-    font-size: 24px;
-    text-align: right;
-    padding-right: 10px;
-  }
-  .section1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .head-img img {
-    width: 150px; /* Réduit la taille de l'image */
-  }
-  .img-article h1, .img-article p {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .down button {
-    width: 90%;
-    margin-top: 20px;
-  }
-  .section2, .section3, .section4 {
-    padding: 10px;
-  }
-  .recent-posts, .f-w-item {
-    flex-direction: column;
-  }
-  .carte {
-    width: 100%;
-    margin-bottom: 20px;
-    flex: 0 0 100%; /* Les cartes prennent plus de place sur mobile */
-  }
-  .f-w-img img {
-    width: 100%;
-    height: auto;
-  }
-  .f-w-text {
-    font-size: 16px;
-    text-align: left;
-  }
-  .contact .form {
-    width: 100%;
-    padding: 15px;
-  }
-  footer {
-    padding: 20px 10px;
-  }
-  .social-buttons img {
-    width: 40px;
-  }
-  .slider-container {
-    width: 50vw; /* Prend toute la largeur de la fenêtre */
-    overflow: hidden; /* Cache les cartes hors de vue */
-    position: relative;
-    display: flex;
-    padding-bottom: 20px;
-    margin: auto;
-  }
-  
-  .slider-content {
-    display: flex; /* Utilise flex pour aligner les cartes en ligne */
-    transition: transform 0.6s ease-in-out;
-    width: calc(50vw * 4); /* 4 = Nombre de cartes */
-  }
-  
-  .slider-content .carte {
-    width: 50vw; /* Chaque carte prend la largeur de la vue */
-    height: max-content;
-    flex-shrink: 0; /* Évite que les cartes se rétrécissent */
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  /* Styles des flèches de navigation */
-  .slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
-    font-size: 20px;
-  }
-  
-  .slider-arrow.left {
-    left: 10px;
-  }
-  
-  .slider-arrow.right {
-    right: 10px;
-  }
-  
-  .slider-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
 }
