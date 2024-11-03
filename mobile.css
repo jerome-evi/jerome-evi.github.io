@@ -9,7 +9,7 @@
     }
   
     nav {
-      flex-direction: column; /* Aligne les éléments de navigation en colonne sur mobile */
+      flex-direction: row; /* Aligne les éléments de navigation en colonne sur mobile */
       padding: 0;
     }
   
