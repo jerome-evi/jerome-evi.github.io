@@ -198,6 +198,7 @@ section.section3 {
   margin-bottom: 10%;
 }
 
+
 .section-p {
   padding-top: 10px;
   font-size: 40px;
@@ -345,8 +346,6 @@ section.section3 {
   display: inline; /* Affiche le texte complet */
 }
 
-
-
 footer {
   width: auto;
   padding-top: 50px;
@@ -354,9 +353,6 @@ footer {
   margin: 0;
   align-items:normal;
   position: relative;
-  
-
-
 }
 .social-buttons {
   display: flex; /* Enable Flexbox layout */
