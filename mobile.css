@@ -184,7 +184,10 @@
 
 section.section3 {
     width: 100%;
-  }
+    height: max-content;
+    padding-bottom: 20px;
+    margin-bottom: 10%;
+}
 
 .f-w-text-p span {
     border-radius: 20px;
@@ -192,17 +195,17 @@ section.section3 {
     padding: 2px 18px;
     color: #fff;
     font-weight: bold;
-  }
+}
 
   .f-w-imgprojet img {
-    width: 100%;
+    width: 80%;
     height: 400px;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
   }
 
     .f-w-imgprojet img {
-        width: 102%;
+        width: 80%;
         height: 113px;
         border-radius: 10px;
         transition: all 0.3s ease 0s;
@@ -227,16 +230,13 @@ section.section3 {
       .slider-content {
         display: flex; /* Utilise flex pour aligner les cartes en ligne */
         transition: transform 0.6s ease-in-out;
-        width: calc(98vw * 4); /* 4 = Nombre de cartes */
+        width: calc(100vw * 4); /* 4 = Nombre de cartes */
       }
       
       .slider-content .carte {
-        width: 98vw; /* Chaque carte prend la largeur de la vue */
-        height: max-content;
-        flex-shrink: 0; /* Évite que les cartes se rétrécissent */
-        padding-left: 30px;
-        padding-right: 30px;
-
+        width:  100vw; /* Chaque carte prend la largeur de la vue */
+        height: auto;
+        padding: 1rem;
       }
       
       /* Styles des flèches de navigation */
