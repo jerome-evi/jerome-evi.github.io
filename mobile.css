@@ -238,19 +238,10 @@ section.section3 {
         height: auto;
         padding: 1rem;
       }
-      
       /* Styles des flèches de navigation */
+
       .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 2;
-        border-radius: 50%;
-        font-size: 20px;
+        display: none;
       }
       
       .slider-arrow.left {
