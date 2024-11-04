@@ -14,8 +14,8 @@
     a {
         text-decoration: none;
         cursor: pointer;
-        width: 5em;
-        height: 2em;
+        width: auto;
+        height: auto;
     }
       
 
